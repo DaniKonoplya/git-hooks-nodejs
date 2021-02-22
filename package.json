@@ -7,7 +7,8 @@
         "test": "jest",
         "lint": "eslint src/**",
         "lint-fix": "eslint src/** --fix",
-        "success-message": "echo Thanks for committing $GIT_AUTHOR_NAME"
+        "success-message": "echo Thanks for committing $GIT_AUTHOR_NAME",
+        "lint-correct": "npm run lint-fix"
     },
     "keywords": [],
     "author": "",
@@ -22,7 +23,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged",
+            "pre-commit": "npm run lint-correct && lint-staged",
             "post-commit": "npm run success-message"
         }
     },
