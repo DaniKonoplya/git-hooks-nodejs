@@ -1,3 +1,3 @@
-const mult = (a, b) => a * b
-
-module.exports = mult
+const mult = (a, b) => a * b;
+console.log(mult);
+module.exports = mult;
