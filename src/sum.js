@@ -1,4 +1,4 @@
-const sum = (a, b) => a + b + 0;
+const sum = (a, b) => a + b;
 console.log('comment');
 
 module.exports = sum;
